@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2017 at 01:53 PM
+-- Generation Time: May 20, 2017 at 08:12 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -42,7 +42,9 @@ CREATE TABLE IF NOT EXISTS `penjualan` (
 
 CREATE TABLE IF NOT EXISTS `teknik_penjualan` (
   `id` int(11) NOT NULL,
-  `nama_teknik` varchar(100) NOT NULL
+  `nama_teknik` varchar(100) NOT NULL,
+  `parent` int(10) unsigned NOT NULL,
+  `kode` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -67,13 +69,13 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Indexes for table `penjualan`
 --
 ALTER TABLE `penjualan`
-  ADD PRIMARY KEY (`id`), ADD KEY `tahun` (`tahun`) COMMENT 'tahun';
+  ADD PRIMARY KEY (`id`), ADD KEY `tahun` (`tahun`) COMMENT 'tahun', ADD KEY `penjualan_fk` (`id_teknik`);
 
 --
 -- Indexes for table `teknik_penjualan`
 --
 ALTER TABLE `teknik_penjualan`
-  ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `nama_teknik` (`nama_teknik`) COMMENT 'nama_teknik';
+  ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `nama_teknik` (`nama_teknik`) COMMENT 'nama_teknik', ADD UNIQUE KEY `kode` (`kode`) COMMENT 'kode';
 
 --
 -- Indexes for table `user`
@@ -100,6 +102,16 @@ ALTER TABLE `teknik_penjualan`
 --
 ALTER TABLE `user`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `penjualan`
+--
+ALTER TABLE `penjualan`
+ADD CONSTRAINT `penjualan_fk` FOREIGN KEY (`id_teknik`) REFERENCES `teknik_penjualan` (`id`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
