@@ -10,4 +10,11 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 require_once($yii);
-Yii::createWebApplication($config)->run();
+$app = Yii::createWebApplication($config);
+
+Yii::import("application.vendors.*");
+require_once 'PHPExcel/PHPExcel.php';
+require_once 'PHPExcel/PHPExcel/Autoloader.php';
+Yii::registerAutoloader(['PHPExcel_Autoloader','load'], true);
+
+$app->run();
