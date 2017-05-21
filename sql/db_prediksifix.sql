@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2017 at 08:12 PM
+-- Generation Time: May 21, 2017 at 02:01 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -45,7 +45,20 @@ CREATE TABLE IF NOT EXISTS `teknik_penjualan` (
   `nama_teknik` varchar(100) NOT NULL,
   `parent` int(10) unsigned NOT NULL,
   `kode` char(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `teknik_penjualan`
+--
+
+INSERT INTO `teknik_penjualan` (`id`, `nama_teknik`, `parent`, `kode`) VALUES
+(3, 'Advertising', 0, 'Adv'),
+(4, 'Open Table', 0, 'Opt'),
+(5, 'Advertising - Tv', 3, 'Adv1'),
+(6, 'Advertising - Radio', 3, 'Adv2'),
+(7, 'Advertising - Internet', 3, 'Adv3'),
+(8, 'Open Table - Event', 4, 'Opt1'),
+(9, 'Open Table - Home', 4, 'Opt2');
 
 -- --------------------------------------------------------
 
@@ -96,7 +109,7 @@ ALTER TABLE `penjualan`
 -- AUTO_INCREMENT for table `teknik_penjualan`
 --
 ALTER TABLE `teknik_penjualan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `user`
 --
