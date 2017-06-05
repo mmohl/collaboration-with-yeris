@@ -1,4 +1,4 @@
-<?
+<?php
 	/**
 	 * Yii Excel File Reader (Yexcel) Class
 	 * by: Michel Kogan

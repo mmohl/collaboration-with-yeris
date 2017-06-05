@@ -1237,3 +1237,281 @@ REQUEST_URI=/prediksi/index.php?r=penjualan/prediksi
 in /opt/lampp/htdocs/prediksi/protected/views/penjualan/tabel.php (7)
 in /opt/lampp/htdocs/prediksi/protected/views/penjualan/prediksi.php (24)
 in /opt/lampp/htdocs/prediksi/protected/controllers/PenjualanController.php (186)
+2017/06/05 15:31:22 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(179): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:33:29 [error] [exception.TypeError] TypeError: Argument 1 passed to DataController::group() must be of the type array, null given, called in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php on line 45 and defined in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php:98
+Stack trace:
+#0 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(45): DataController->group(NULL)
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#9 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:36:49 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:38:26 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:43:30 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:44:56 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:47:53 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:49:50 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:49:54 [error] [exception.Error] Error: Class 'Yexcel' not found in C:\xampp\htdocs\yii\framework\YiiBase.php:217
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('yexcel')
+#2 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CModule->__get('yexcel')
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows('C:\\xampp\\htdocs...', 'Data Penjualan(...')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('import')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/import')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\perhitungan\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/perhitungan/index.php?r=data/import
+HTTP_REFERER=http://localhost/perhitungan/index.php?r=data/import
+---
+2017/06/05 15:51:39 [error] [php] include(Yexcel.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(217): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): createComponent()
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CWebApplication->__get()
+#4 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): DataController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): DataController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DataController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\perhitungan\index.php(20): CWebApplication->run()
+REQUEST_URI=/perhitungan/index.php?r=data/import
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (181)
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (38)
+in C:\xampp\htdocs\perhitungan\index.php (20)
+2017/06/05 15:52:46 [error] [php] include(Yexcel.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(217): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): createComponent()
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CWebApplication->__get()
+#4 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): DataController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): DataController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DataController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\perhitungan\index.php(20): CWebApplication->run()
+REQUEST_URI=/perhitungan/index.php?r=data/import
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (181)
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (38)
+in C:\xampp\htdocs\perhitungan\index.php (20)
+2017/06/05 15:52:49 [error] [php] include(Yexcel.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(217): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): createComponent()
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CWebApplication->__get()
+#4 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): DataController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): DataController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DataController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\perhitungan\index.php(20): CWebApplication->run()
+REQUEST_URI=/perhitungan/index.php?r=data/import
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (181)
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (38)
+in C:\xampp\htdocs\perhitungan\index.php (20)
+2017/06/05 15:53:32 [error] [php] include(PHPExcel_Shared_ZipStreamWrapper.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\perhitungan\protected\extensions\yexcel\Classes\PHPExcel\Autoloader.php(31): spl_autoload_call()
+#1 C:\xampp\htdocs\perhitungan\protected\extensions\yexcel\Classes\PHPExcel\IOFactory.php(35): require()
+#2 C:\xampp\htdocs\perhitungan\protected\extensions\yexcel\Yexcel.php(33): include()
+#3 C:\xampp\htdocs\yii\framework\YiiBase.php(321): require()
+#4 C:\xampp\htdocs\yii\framework\YiiBase.php(197): import()
+#5 C:\xampp\htdocs\yii\framework\base\CModule.php(393): createComponent()
+#6 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CWebApplication->getComponent()
+#7 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(181): CWebApplication->__get()
+#8 C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php(38): DataController->setNewRows()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DataController->actionImport()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(286): DataController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): DataController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DataController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\perhitungan\index.php(20): CWebApplication->run()
+REQUEST_URI=/perhitungan/index.php?r=data/import
+in C:\xampp\htdocs\perhitungan\protected\extensions\yexcel\Classes\PHPExcel\Autoloader.php (31)
+in C:\xampp\htdocs\perhitungan\protected\extensions\yexcel\Classes\PHPExcel\IOFactory.php (35)
+in C:\xampp\htdocs\perhitungan\protected\extensions\yexcel\Yexcel.php (33)
+2017/06/05 15:54:33 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php:65)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): DataController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): DataController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DataController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\perhitungan\index.php(20): CWebApplication->run()
+REQUEST_URI=/perhitungan/index.php?r=data/import
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (65)
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (47)
+in C:\xampp\htdocs\perhitungan\index.php (20)
+2017/06/05 15:55:05 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php:65)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): DataController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): DataController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DataController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\perhitungan\index.php(20): CWebApplication->run()
+REQUEST_URI=/perhitungan/index.php?r=data/import
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (65)
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (47)
+in C:\xampp\htdocs\perhitungan\index.php (20)
+2017/06/05 15:57:05 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php:65)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): DataController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): DataController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): DataController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\perhitungan\index.php(20): CWebApplication->run()
+REQUEST_URI=/perhitungan/index.php?r=data/import
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (65)
+in C:\xampp\htdocs\perhitungan\protected\controllers\DataController.php (47)
+in C:\xampp\htdocs\perhitungan\index.php (20)

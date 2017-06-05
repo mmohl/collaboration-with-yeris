@@ -1,8 +1,8 @@
 <?php
 
 // uncomment the following to define a path alias
-// Yii::setPathOfAlias('local','path/to/local-folder');
-
+// Yii::setPathOfAlias('local', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR  . 'extensions');
+//Yii::setPathOfAlias('extcommon', $root . DIRECTORY_SEPARATOR . 'common' . DIRECTORY_SEPARATOR . 'extensions');
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
@@ -38,10 +38,9 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 						
-		'yexcel' => array(
-			'class' => 'ext.yexcel.Yexcel'
-		),
-
+                'yexcel' => array(
+                    'class' => 'ext.yexcel.Yexcel'
+                ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
