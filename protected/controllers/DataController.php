@@ -175,7 +175,7 @@ class DataController extends Controller
 		}
 	}
 	
-	private function setNewRows(string $path, string $name) {
+	private function setNewRows($path, $name) {
 		$this->newRows = Yii::app()->yexcel->readActiveSheet($path . $name);
 	}
 }
