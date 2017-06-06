@@ -2,6 +2,7 @@
 /* @var $this TeknikController */
 /* @var $model Teknik */
 /* @var $form CActiveForm */
+// var_dump($parents);die;
 ?>
 
 <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?> 

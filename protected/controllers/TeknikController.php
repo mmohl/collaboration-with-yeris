@@ -64,7 +64,7 @@ class TeknikController extends Controller
 	{
 		$model=new Teknik;
 		
-		$parents = Teknik::getKodes();
+		$parents = Teknik::getKodes(true);
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 

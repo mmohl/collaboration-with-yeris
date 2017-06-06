@@ -105,13 +105,18 @@ class Teknik extends CActiveRecord
 		return parent::model($className);
 	}
 	
-	public static function getKodes() 
+	public static function getKodes($dropdown = false) 
 	{
 		// initialize empty array
 		$parentMap = [];
 		// find all teknik both parent & child
 		$parents = Teknik::model()->findAll();
 		// take only the kode
+
+		if ($dropdown) {
+			return $parents;
+		}
+
 		foreach ($parents as $parent) {
 // 			var_dump($parent->id);die;
 			$parentMap[$parent->id] = $parent->kode;
